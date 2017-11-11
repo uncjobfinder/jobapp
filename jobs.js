@@ -31,15 +31,21 @@ $(document).ready(function(){
 
 							var location = $("<p> Location: " + response.listings.listing[i].company.location.name + "</p>");
 							var company = $("<p> Company: " + response.listings.listing[i].company.name + "</p>");
-							var title = $("<p><strong> Job: " + response.listings.listing[i].title + "</strong></p>");
-							var applyUrl = $("<p> Company: " + response.listings.listing[i].apply_url + "</p>");
+							var title = $("<p><strong> Job: " +  response.listings.listing[i].title + "</strong></p>");
+							var applyUrl = response.listings.listing[i].apply_url;
+							var applyNow = $("<p> <a href='" + applyUrl + "'> Apply Now </a></p>");
+							
+							var tagline = $("<p> " + response.listings.listing[i].company.tagline + "</p>");
 							}
 
 						//displays data
 						$("#jobs").append(title);
 						$("#jobs").append(company);
+						$("#jobs").append(tagline);
 						$("#jobs").append(location);
-						//	$("#jobs").append("<a href = " + JSON.stringify(applyURL) + " Apply Here </a> <br><br>");
+						$("#jobs").append(applyNow);
+						
+						//$("#jobs").append("<a href = " + JSON.stringify(applyURL) + " Apply Here </a> <br><br>");
 
 						};
 			keywords = "";
