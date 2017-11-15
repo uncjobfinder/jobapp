@@ -99,16 +99,6 @@
         <h1><i>“The future belongs to those who believe in the beauty of their dreams.”</i> –Eleanor Roosevelt</h1>
       </div>
     </aside>
-    <!-- Choose a job you love, and you will never have to work a day in your life. —Confucius -->
-
-    <!-- Call to Action -->
-<!--     <aside class="call-to-action bg-primary text-white">
-      <div class="container text-center">
-        <h3>The buttons below are impossible to resist.</h3>
-        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-      </div>
-    </aside> -->
 
       <section id="about" class="about">
       <div class="container text-center">
@@ -127,7 +117,8 @@
         // Constructor creates a new map - only center and zoom are required.
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.7413549, lng: -73.9980244},
-          zoom: 13
+          zoom: 13,
+          scrollwheel: false
         });
       }
         // These are the real estate listings that will be shown to the user.

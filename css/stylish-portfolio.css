@@ -19,6 +19,14 @@ body {
   color: white;
 }
 
+#web {
+  text-shadow: 2px 2px #bfbfbf;
+}
+
+#enter {
+  text-shadow: 2px 2px #bfbfbf;
+}
+
 .text-vertical-center {
   display: table-cell;
   text-align: center;
@@ -33,7 +41,7 @@ body {
 }
 /* Custom Button Styles */
 
-.btn-dark {
+/*.btn-dark {
   color: #fff;
   border: none;
   border-radius: 0;
@@ -57,7 +65,7 @@ body {
   background-color: rgba(255, 255, 255, .8);
 }
 
-
+*/
 /* Custom Horizontal Rule */
 
 hr.small {
@@ -178,16 +186,16 @@ hr.small {
 }
 
 
-/* Services */
+/*/* Services */
 
-.services {
+/*.services {
   padding: 50px 0;
 }
 
 .service-item {
   margin-bottom: 30px;
 }
-
+*/
 
 /* Callout */
 
