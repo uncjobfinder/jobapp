@@ -18,9 +18,11 @@ $(document).ready(function(){
 	      url: queryURL,
 	      method: 'GET'
 	    }).done(function(response) {
+				initMap(response);
+				populateMap(response);
 				//start with empty results
 				$("#jobs").empty();
-				initMap(response.listings);
+
 				//loop through to get 10 entries
 	     	 for (var i = 0; i < 10; i++) {
 						console.log(response.listings.listing[i].title);
@@ -50,6 +52,7 @@ $(document).ready(function(){
 
 						};
 			keywords = "";
-			});
-	});
-})
+			});// Closing of . done function
+
+	});// Closing for document on click
+})// Close of Document Ready
