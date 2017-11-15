@@ -1,6 +1,7 @@
 //Global Variables
 var apikey = config.jobs_apikey;
 var keywords = "";
+var markers = [];
 
 $(document).ready(function(){
 
@@ -20,7 +21,7 @@ $(document).ready(function(){
 	    }).done(function(response) {
 				//start with empty results
 				$("#jobs").empty();
-				initMap(response.listings);
+
 				//loop through to get 10 entries
 	     	 for (var i = 0; i < 10; i++) {
 						console.log(response.listings.listing[i].title);
@@ -37,6 +38,15 @@ $(document).ready(function(){
 							var applyNow = $("<p> <a href='" + applyUrl + "'> Apply Now </a></p>");
 							
 							var tagline = $("<p> " + response.listings.listing[i].company.tagline + "</p>");
+							var marker = new google.maps.Marker({
+            					map: map,
+            					position: {lat: parseInt(response.listings.listing[i].company.location.lat), lng: parseInt(response.listings.listing[i].company.location.lng)},
+            					title: response.listings.listing[i].company.name,
+            					animation: google.maps.Animation.DROP,
+            					id: i
+          					});
+          					markers.push(marker);
+          					marker.setMap(map);
 							}
 
 						//displays data
@@ -50,6 +60,8 @@ $(document).ready(function(){
 
 						};
 			keywords = "";
-			});
-	});
-})
+			});// Closing of . done function
+
+	});// Closing for document on click
+
+})// Close of Document Ready
