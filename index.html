@@ -33,7 +33,7 @@
           <i class="fa fa-times"></i>
         </a>
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#top">Start Bootstrap</a>
+          <a class="js-scroll-trigger" href="#top">Start Job Search</a>
         </li>
         <li>
           <a class="js-scroll-trigger" href="#top">Home</a>
@@ -56,15 +56,15 @@
     <!-- Header -->
     <header class="header" id="top">
       <div class="text-vertical-center">
-        <h1>Web Developer Job Finder</h1>
-        <h3>Enter a keyword to start your search!</h3>
+        <h1><span id="web">Web Developer Job Finder</span></h1>
+        <h3><span id="enter">Enter a keyword to start your search!</span></h3>
         <br>
         <div class="row">
           <div class="col-lg-4"></div>
           <div class="zipcode col-lg-4">
           <div class="input-group">
-          <input type="text" class="form-control" placeholder="Ex: css, html">
-          <span class="input-group-btn">
+          <input type="text" id="keywords" class="form-control" placeholder="Ex: css, html">
+          <span class="input-group-btn" id="button">
           <button class="btn btn-secondary" type="button">Go!</button>
           </span>
           </div>
@@ -82,114 +82,15 @@
       <!-- /.container -->
     </section>
 
-    <!-- Services -->
-<!--     <section id="services" class="services bg-primary text-white">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-10 mx-auto">
-            <h2>Our Services</h2>
-            <hr class="small">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Service Name</strong>
-                  </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Service Name</strong>
-                  </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Service Name</strong>
-                  </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Service Name</strong>
-                  </h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-            </div>
-   --> 
-
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
             <h2>Jobs</h2>
-            <hr class="small">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-1.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-2.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-3.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-4.jpg">
-                  </a>
-                </div>
-              </div>
+            <div>
+              <span id="jobs"></span>
             </div>
-            <!-- /.row (nested) -->
-            <a href="#" class="btn btn-dark">View More Items</a>
-          </div>
-          <!-- /.col-lg-10 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
     </section>
 
         <!-- Callout -->
@@ -217,35 +118,66 @@
     </section>
 
     <!-- Map -->
-<!--     <section id="contact" class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-      <br/>
-      <small>
-        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-      </small>
-    </section> -->
-
-    <!-- Custom Google Map -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCBDdXN-bJtsrercbnwhJy83mwFRpu49A&v3&callback=initMap"></script>
-    <div id="map">
-      <script>
-        var map;
-        var zipCode = prompt("Enter Your Zipcode");
-
-        var geocode = new google.maps.Geocoder(zipCode);
-        console.log(geocode);
-
-        function initMap(){
-          // Creates a Google Map
-          map = new google.map.Map(document.getElementById('map'), {
-            center: geocode,
-            zoom: 6
+    <section id="map" class="map">
+       <script>
+      var map;
+      // Create a new blank array for all the listing markers.
+      var markers = [];
+      function initMap() {
+        // Constructor creates a new map - only center and zoom are required.
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.7413549, lng: -73.9980244},
+          zoom: 13
+        });
+      }
+        // These are the real estate listings that will be shown to the user.
+        // Normally we'd have these in a database instead.
+      function populateMap(locations) {
+        
+        var largeInfowindow = new google.maps.InfoWindow();
+        var bounds = new google.maps.LatLngBounds();
+        // The following group uses the location array to create an array of markers on initialize.
+        for (var i = 0; i < locations.length; i++) {
+          // Get the position from the location array.
+          var position = locations[i].location;
+          var title = locations[i].title;
+          // Create a marker per location, and put into markers array.
+          var marker = new google.maps.Marker({
+            map: map,
+            position: {lat: locations[i].company.location.lat, lng: locations[i].company.location.lng},
+            title: locations[i].company.name,
+            animation: google.maps.Animation.DROP,
+            id: i
           });
-
+          // Push the marker to our array of markers.
+          markers.push(marker);
+          // Create an onclick event to open an infowindow at each marker.
+          marker.addListener('click', function() {
+            populateInfoWindow(this, largeInfowindow);
+          });
+          bounds.extend(markers[i].position);
         }
-      </script>
-      
-    </div>
+        // Extend the boundaries of the map for each marker
+        map.fitBounds(bounds);
+      }
+      // This function populates the infowindow when the marker is clicked. We'll only allow
+      // one infowindow which will open at the marker that is clicked, and populate based
+      // on that markers position.
+      function populateInfoWindow(marker, infowindow) {
+        // Check to make sure the infowindow is not already opened on this marker.
+        if (infowindow.marker != marker) {
+          infowindow.marker = marker;
+          infowindow.setContent('<div>' + marker.title + '</div>');
+          infowindow.open(map, marker);
+          // Make sure the marker property is cleared if the infowindow is closed.
+          infowindow.addListener('closeclick',function(){
+            infowindow.setMarker = null;
+          });
+        }
+      }
+    </script>
+
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -253,37 +185,9 @@
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
             <h4>
-              <strong>Web Developer Job Finder</strong>
+              <strong>Web Developer Job Finder</strong><br>Powered by: Authentic Jobs
             </h4>
-<!--             <p>3481 Melrose Place
-              <br>Beverly Hills, CA 90210</p>
-            <ul class="list-unstyled">
-              <li>
-                <i class="fa fa-phone fa-fw"></i>
-                (123) 456-7890</li>
-              <li>
-                <i class="fa fa-envelope-o fa-fw"></i>
-                <a href="mailto:name@example.com">name@example.com</a>
-              </li>
-            </ul>
-            <br>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook fa-fw fa-3x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter fa-fw fa-3x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-dribbble fa-fw fa-3x"></i>
-                </a>
-              </li>
-            </ul> -->
+
             <hr class="small">
             <p class="text-muted">Copyright &copy; Team 10 2017</p>
           </div>
@@ -306,7 +210,12 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.js"></script>
+    <script type='text/javascript' src='config.js'></script>
+    <script src="jobs.js"></script>
 
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_usdjN94oT5a5cV7UbjShbi_KAjnf--s&v=3&callback=initMap">
+    </script>
   </body>
 
 </html>
