@@ -20,6 +20,7 @@ $(document).ready(function(){
 	    }).done(function(response) {
 				//start with empty results
 				$("#jobs").empty();
+				initMap(response.listings);
 				//loop through to get 10 entries
 	     	 for (var i = 0; i < 10; i++) {
 						console.log(response.listings.listing[i].title);
