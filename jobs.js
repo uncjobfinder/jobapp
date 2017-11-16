@@ -21,10 +21,11 @@ $(document).ready(function(){
 	    }).done(function(response) {
 				//start with empty results
 				$("#jobs").empty();
+				markers = [];
 
 				//loop through to get 10 entries
 	     	 for (var i = 0; i < 10; i++) {
-						console.log(response.listings.listing[i].title);
+						//console.log(response.listings.listing[i].title);
 						if (response.listings.listing[i].company.location){
 							var lat = response.listings.listing[i].company.location.lat;
 							var lng = response.listings.listing[i].company.location.lng;
