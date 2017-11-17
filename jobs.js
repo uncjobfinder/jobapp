@@ -8,7 +8,12 @@ $(document).ready(function(){
 	//Take button input and create URL
 	$(document).on('click', '#button', function(event){
 		event.preventDefault();
+
 			keywords = $("#keywords").val();
+			if (keywords === "") {
+				$("#alertInvalid").html("<p>This isn't a valid search query.");
+
+			} else {
 			console.log("keywords", keywords);
 			
 			var queryURL = "https://authenticjobs.com/api/?api_key=" + apikey + "&method=aj.jobs.search&keywords=" + keywords + "&perpage=10&format=json"
@@ -63,7 +68,7 @@ $(document).ready(function(){
 						};
 			keywords = "";
 			});// Closing of . done function
-
+	};
 	});// Closing for document on click
 
 	// FUNCTION FOR USER INPUT VALIDATION
