@@ -66,4 +66,14 @@ $(document).ready(function(){
 
 	});// Closing for document on click
 
+	// FUNCTION FOR USER INPUT VALIDATION
+function IsEmpty(){
+  if(document.getElementbyId['#keywords'].value === "")
+  {
+    alert("empty");
+    return false;
+  }
+    return true;
+};
+
 })// Close of Document Ready
