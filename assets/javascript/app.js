@@ -6,34 +6,41 @@
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyBSabjKGEF0vNtXN9iWRh-TycBywbF8uS0",
-  authDomain: "jobfinder-c4a9b.firebaseapp.com",
-  databaseURL: "https://jobfinder-c4a9b.firebaseio.com",
-  projectId: "jobfinder-c4a9b",
-  storageBucket: "jobfinder-c4a9b.appspot.com",
-  messagingSenderId: "214976884404"
-};
+    apiKey: "AIzaSyDdfr3tCdU4JWhXLsDAQFrEnBvE8TbfntM",
+    authDomain: "webdeveloperjobf-1510246800023.firebaseapp.com",
+    databaseURL: "https://webdeveloperjobf-1510246800023.firebaseio.com",
+    projectId: "webdeveloperjobf-1510246800023",
+    storageBucket: "",
+    messagingSenderId: "792214229570"
+  };
 
 firebase.initializeApp(config);
 
 // Global Variables
 var database = firebase.database();
-var zipCode = 0;
+
+//initialize an array
+var keywordsAr= [];
 
 // Submit to Database on Click
-
-$("#submit").on("click", function(event) {
+$(document).on('click', '#button', function(event){
   event.preventDefault();
+ 
+  // Save form data to variables
+  keywords = $("#keywords").val().trim();
 
-  // Save form data to variables here
-  zipCode = $("#input-zip").val().trim();
+  //split multiple words into separate items in the array
+  keywordsAr = keywords.split(',');
 
+  //created local temp object for holding items
+  keywords_submitted = {
+    word: keywordsAr
+  };
 
 
   // Code to Push Values to Database
-  database.ref().push();
+  database.ref().push(keywords_submitted);
 
-  // Form Clear
-  $("#input-zip").val("");
+
   
 })
