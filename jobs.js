@@ -12,7 +12,8 @@ $(document).ready(function(){
 			console.log("keywords", keywords);
 			
 			var queryURL = "https://authenticjobs.com/api/?api_key=" + apikey + "&method=aj.jobs.search&keywords=" + keywords + "&perpage=10&format=json"
-				
+		
+		window.location.href="#about";
 				
 		//ajax call
 	    $.ajax({
