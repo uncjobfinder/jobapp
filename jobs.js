@@ -14,6 +14,7 @@ $(document).ready(function(){
 				$("#alertInvalid").html("<p>This isn't a valid search query.");
 
 			} else {
+				$("#alertInvalid").html("");
 			console.log("keywords", keywords);
 			
 			var queryURL = "https://authenticjobs.com/api/?api_key=" + apikey + "&method=aj.jobs.search&keywords=" + keywords + "&perpage=10&format=json"
@@ -70,15 +71,5 @@ $(document).ready(function(){
 			});// Closing of . done function
 	};
 	});// Closing for document on click
-
-	// FUNCTION FOR USER INPUT VALIDATION
-function IsEmpty(){
-  if(document.getElementbyId['#keywords'].value === "")
-  {
-    alert("empty");
-    return false;
-  }
-    return true;
-};
 
 })// Close of Document Ready
